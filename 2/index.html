@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка. Главная страница</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <base href="https://htmlacademy-adaptive.github.io/144822-mishka/2/">
+</head>
+
+<body>
+    <header>
+        <div class="main-logo">
+            <img src="img/main-logo.png" alt="Логотип сайта Мишка" width="" height="">
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li class="main-menu--item"><a href="">Каталог товаров</a></li>
+                <li class="main-menu--item"><a href="">Вязание на заказ</a></li>
+            </ul>
+            <div class="user-menu">
+                <div class="user-menu-search">
+                    <div class="user-search">
+                        <a>Поиск по сайту</a>
+                        <div class="search-modal">
+                            <form action="https://htmlacademy.ru" method="get">
+                                <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
+                                <label for="text-search" class="search-label">Слово для поиска</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-backet">
+                    <a href="#" class="user-menu-backet">Корзина: пока пуста</a>
+                    <!--
+                    <div class="backet-modal">
+                        <table>
+                            <caption>Итого: 750 руб.</caption>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/1min.png" alt="Пломбир апельсиновый" height="33" width="33"></td>
+                                <td class="prodact-name">Пломбир с апельсиновым джемом</td>
+                                <td class="prodact-size">1,5 кг х 200 руб.</td>
+                                <td class="prodact-price">300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/2min.png" alt="Пломбир клубничный" height="33" width="33"></td>
+                                <td class="prodact-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="prodact-size">1,5 кг х 300 руб.</td>
+                                <td class="prodact-price">450 руб.</td>
+                            </tr>
+                        </table>
+                        <a href="#" class="btn bucket-btn">Оформить заказ</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="slogan">
+                <b>Милые штучки ручной работы для дома</b>
+            </div>
+            <div class="products--list products--list__interior"></div>
+            <div class="products--list products--list__toys"></div>
+            <article class="products--item">
+                <h2>Вязаные корзинки</h2>
+                <p class="products--item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <ul class="products--item-features">
+                    <li class="feature feature__color"></li>
+                    <li class="feature feature__diameter"></li>
+                    <li class="feature feature__height"></li>
+                </ul>
+                <img src="img/product-illustration-1" class="products-item--illustration" alt="Иллюстрация к корзинке" width="" height="">
+                <span class="products-item--price">Цена: 990 руб.</span>
+                <button class="btn products-item__btn">Заказать</button>
+            </article>
+        </section>
+        <section class="advantages-list">
+            <h2>Коротко о нас</h2>
+            <div class="advantages advantages__eco">
+                <h3></h3>
+                <img src="img/advantages__eco.png" alt="Экологичное производство" width="" height="">
+            </div>
+            <!--            если делать не img, а бэкграундом псевдоэлемента, то второй класс дивам не нужен-->
+            <div class="advantages advantages__price">
+                <h3></h3>
+                <img src="img/advantages__price.png" alt="Лучшая цена" width="" height="">
+            </div>
+            <div class="advantages advantages__likes">
+                <h3></h3>
+                <img src="img/advantages__likes.png" alt="Больше лайков фотографиям" width="" height="">
+            </div>
+            <div class="advantages advantages__handmade">
+                <h3></h3>
+                <img src="img/advantages__handmade.png" alt="Ручная работа" width="" height="">
+            </div>
+            <div class="advantages advantages__native">
+                <h3></h3>
+                <img src="img/advantages__native.png" alt="Поддержка отечественных мастеров" width="" height="">
+            </div>
+            <div class="advantages advantages__giftwrap">
+                <h3></h3>
+                <img src="img/advantages__giftwrap.png" alt="Подарочная упаковка" width="" height="">
+            </div>
+            <article class="reviews">
+                <h2>отзывы</h2>
+                <div class="reviews--slide">
+                    <p class="user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+                    <div class="review-author">
+                        <span class="author-name">Анастасия Красильникова</span>
+                        <span class="author-contacts">@misssssiskras</span>
+                    </div>
+                    <a class="move-btn move-btn__prev">Назад</a>
+                    <a class="move-btn move-btn__next">Вперед</a>
+                    <a href="send-review-page.html" class="btn reviews__btn">Написать</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="contacts">
+            <span class="contacts--info">e-mail:</span>
+            <span class="contacts--info">info@mimimishkashop.ru</span>
+            <span class="contacts--info">адрес:</span>
+            <div class="contacts--adres">
+                <span class="contacts--info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </div>
+        </div>
+        <div id="map"></div>
+        <a href="letter-page.html" class="btn footer__btn">Напишите нам</a>
+        <div class="footer-info">
+            <ul class="social-list">
+                <li class="social-list--item social-list--item__insta"><a href="">Inst</a></li>
+                <li class="social-list--item social-list--item__fb"><a href="">FB</a></li>
+                <li class="social-list--item social-list--item__twi"><a href="">Twi</a></li>
+            </ul>
+            <div class="site-developers">
+                <span class="developwr--studio"></span>
+                <img class="developer--logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<!--Попытка номер 1-->
