@@ -11,28 +11,26 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="img/heade__logo.png" alt="Логотип сайта Мишка" width="" height="">
+            <img src="img/header__logo.png" alt="Логотип сайта Мишка" width="" height="">
         </div>
         <nav class="header__menu">
             <ul>
-                <li class="menu-item"><a href="#">Каталог товаров</a></li>
-                <li class="menu-item"><a href="#">Вязание на заказ</a></li>
+                <li class="header__menu-item"><a href="#">Каталог товаров</a></li>
+                <li class="header__menu-item"><a href="#">Вязание на заказ</a></li>
             </ul>
         </nav>
         <div class="header__user-menu">
-            <div class="user-search">
-                <div class="user-search">
-                    <a>Поиск по сайту</a>
-                    <div class="search-modal">
-                        <form action="https://htmlacademy.ru" method="get">
-                            <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
-                            <label for="text-search" class="search-label">Слово для поиска</label>
-                        </form>
-                    </div>
+            <div class="header__user-search">
+                <a href="#">Поиск по сайту</a>
+                <div class="header__search-modal">
+                    <form action="https://htmlacademy.ru" method="get">
+                        <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
+                        <label for="text-search" class="header__search-label">Слово для поиска</label>
+                    </form>
                 </div>
             </div>
-            <div class="user-backet">
-                <a href="#" class="user-backet-status">Корзина: пока пуста</a>
+            <div class="header__backet">
+                <a href="#" class="header__backet header__backet--status">Корзина: пока пуста</a>
                 <!--
                     <div class="backet-modal">
                         <table>
@@ -65,7 +63,7 @@
     <main>
         <section class="products">
             <div class="products__slogan">
-                <H1>Милые штучки ручной работы для дома</H1>
+                <h1>Милые штучки ручной работы для дома</h1>
             </div>
             <div class="products__list products__list--interior">
                 <a href="#">Предметы интерьера</a>
@@ -74,66 +72,66 @@
                 <a href="#">Детские игрушки</a>
             </div>
             <article class="products__item">
-                <h2 class="item-title">Вязаные корзинки</h2>
-                <span class="item-of-week">Товар недели</span>
-                <p class="item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-                <ul class="item-features">
-                    <li class="feature feature__color"></li>
-                    <li class="feature feature__diameter"></li>
-                    <li class="feature feature__height"></li>
+                <h1 class="products__title">Вязаные корзинки</h1>
+                <span class="products__item-of-week">Товар недели</span>
+                <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <ul class="products__features">
+                    <li class="products__feature products__feature--color"></li>
+                    <li class="products__feature products__feature--diameter"></li>
+                    <li class="products__feature products__feature--height"></li>
                 </ul>
-                <img src="img/produc__illustration-1" class="item-illustration" alt="Иллюстрация к корзинке" width="" height="">
-                <span class="item--price">Цена: 990 руб.</span>
-                <a class="btn item__btn">Заказать</a>
+                <img src="img/products__illustration-1" class="products__illustration" alt="Иллюстрация к корзинке" width="" height="">
+                <span class="products__price">Цена: 990 руб.</span>
+                <a class="btn products__btn">Заказать</a>
             </article>
         </section>
         <section class="advantages-items">
             <h2>Коротко о нас</h2>
             <ul class="advantages-items__list">
-                <li class="advantages advantages__eco">Экологически чистые материалы</li>
-                <li class="advantages advantages__price">Скандинавский стиль по российской цене</li>
-                <li class="advantages advantages__likes">Увеличивает лайки на фотографиях</li>
-                <li class="advantages advantages__handmade">Связано вручную с любовью и умилением</li>
-                <li class="advantages advantages__native">Поддержка отечественного производителя</li>
-                <li class="advantages advantages__giftwrap">Поставляется в подарочной упаковке</li>
+                <li class="advantages-items__item advantages-items__item--eco">Экологически чистые материалы</li>
+                <li class="advantages-items__item advantages-items__item--price">Скандинавский стиль по российской цене</li>
+                <li class="advantages-items__item advantages-items__item--likes">Увеличивает лайки на фотографиях</li>
+                <li class="advantages-items__item advantages-items__item--handmade">Связано вручную с любовью и умилением</li>
+                <li class="advantages-items__item advantages-items__item--native">Поддержка отечественного производителя</li>
+                <li class="advantages-items__item advantages-items__item--giftwrap">Поставляется в подарочной упаковке</li>
             </ul>
         </section>
         <article class="reviews">
             <h2>Отзывы</h2>
             <blockquote class="reviews__slide">
-                <p class="user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-                <div class="review-author">
-                    <span class="author-name">Анастасия Красильникова</span>
-                    <span class="author-contacts">@misssssiskras</span>
+                <p class="reviews__user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+                <div class="reviews__author">
+                    <span class="rewiews__author-name">Анастасия Красильникова</span>
+                    <span class="reviews__author-contacts">@misssssiskras</span>
                 </div>
             </blockquote>
-            <div class="blockquote__btn">
-                <a href="#" class="move-btn move-btn__prev">Назад</a>
-                <a href="#" class="move-btn move-btn__next">Вперед</a>
-                <a href="send-review-page.html" class="btn reviews__btn">Написать</a>
-            </div>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--prev">Назад</a>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--next">Вперед</a>
+            <a href="send-review-page.html" class="btn reviews__btn">Написать</a>
         </article>
     </main>
     <div class="contacts">
         <span class="contacts__info">e-mail:</span>
-        <a href="info@mimimishkashop.ru" class="contacts__info">info@mimimishkashop.ru</a>
+        <a href="mailto:info@mimimishkashop.ru" class="contacts__info">info@mimimishkashop.ru</a>
         <span class="contacts__info">адрес:</span>
-        <div class="contacts__adres">
+        <div class="contacts__adress">
             <span class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
         </div>
     </div>
     <div id="map"></div>
     <a href="letter-page.html" class="btn footer__btn">Напишите нам</a>
-    <footer>
-            <ul class="footer__social-list">
-                <li class="social-list__item social-list__item--insta"><a href="">Inst</a></li>
-                <li class="social-list__item social-list__item--fb"><a href="">FB</a></li>
-                <li class="social-list__item social-list__item--twi"><a href="">Twi</a></li>
-            </ul>
-            <div class="site-developer">
-                <span class="developer__studio">Разработано</span>
-                <img class="developer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height="">
+    <footer class="footer">
+        <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--insta"><a href="">Inst</a></li>
+            <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
+            <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/">
+            <div class="footer__site-developer">
+                <span class="footer__studio">Разработано</span>
+                <img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height="">
             </div>
+        </a>
     </footer>
 </body>
 
