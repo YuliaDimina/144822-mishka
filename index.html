@@ -14,17 +14,17 @@
         </div>
         <nav class="header__menu">
             <ul>
-                <li class="menu-item"><a href="#">Каталог товаров</a></li>
-                <li class="menu-item"><a href="#">Вязание на заказ</a></li>
+                <li class="header__menu-item"><a href="#">Каталог товаров</a></li>
+                <li class="header__menu-item"><a href="#">Вязание на заказ</a></li>
             </ul>
         </nav>
         <div class="header__user-menu">
-            <div class="user-search">
+            <div class="header__user-search">
                 <a href="#">Поиск по сайту</a>
-                <div class="search-modal">
+                <div class="header__search-modal">
                     <form action="https://htmlacademy.ru" method="get">
                         <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
-                        <label for="text-search" class="search-label">Слово для поиска</label>
+                        <label for="text-search" class="header__search-label">Слово для поиска</label>
                     </form>
                 </div>
             </div>
@@ -77,11 +77,11 @@
                 <ul class="products__features">
                     <li class="products__feature products__feature--color"></li>
                     <li class="products__feature products__feature--diameter"></li>
-                    <li class="products__feature products__feature--_height"></li>
+                    <li class="products__feature products__feature--height"></li>
                 </ul>
-                <img src="img/produc__illustration-1" class="products__illustration" alt="Иллюстрация к корзинке" width="" height="">
+                <img src="img/products__illustration-1" class="products__illustration" alt="Иллюстрация к корзинке" width="" height="">
                 <span class="products__price">Цена: 990 руб.</span>
-                <a class="btn products--btn">Заказать</a>
+                <a class="btn products__btn">Заказать</a>
             </article>
         </section>
         <section class="advantages-items">
@@ -104,18 +104,16 @@
                     <span class="reviews__author-contacts">@misssssiskras</span>
                 </div>
             </blockquote>
-            <div class="reviews__blockquote-btn">
-                <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--prev">Назад</a>
-                <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--next">Вперед</a>
-                <a href="send-review-page.html" class="btn reviews--btn">Написать</a>
-            </div>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--prev">Назад</a>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--next">Вперед</a>
+            <a href="send-review-page.html" class="btn reviews__btn">Написать</a>
         </article>
     </main>
     <div class="contacts">
         <span class="contacts__info">e-mail:</span>
         <a href="mailto:info@mimimishkashop.ru" class="contacts__info">info@mimimishkashop.ru</a>
         <span class="contacts__info">адрес:</span>
-        <div class="contacts__adres">
+        <div class="contacts__adress">
             <span class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
         </div>
     </div>
@@ -127,10 +125,12 @@
             <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
             <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
         </ul>
-        <a href="https://htmlacademy.ru/"><div class="site-developer">
-            <span class="developer__studio">Разработано</span>
-            <img class="developer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height="">
-            </div></a>
+        <a href="https://htmlacademy.ru/">
+            <div class="footer__site-developer">
+                <span class="footer__studio">Разработано</span>
+                <img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height="">
+            </div>
+        </a>
     </footer>
 </body>
 
