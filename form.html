@@ -60,14 +60,13 @@
         </div>
     </header>
     <main class="main">
-        <h1 class="main-title">Вязание на заказ</h1>
-        <section class="order-form">
+        <h1 class="main__title">Вязание на заказ</h1>
+        <form class="order-form" action="#" method="post">
             <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
             <div class="order-form__filters">
                 <fieldset class="order-form__fieldset order-form__fieldset--type">
                     <div class="order-form__fieldset-name">
                         <span class="order-form__fieldset-title">Тип</span>
-                        <span class="order-form__fieldset-edge"></span>
                     </div>
                     <ul class="order-form__filter">
                         <li class="order-form__filter-item order-form__filter-item--type">
@@ -83,7 +82,6 @@
                 <fieldset class="order-form__fieldset order-form__fieldset--color">
                     <div class="order-form__fieldset-name">
                         <span class="order-form__fieldset-title">Цвет</span>
-                        <span class="order-form__fieldset-edge"></span>
                     </div>
                     <ul class="order-form__filter">
                         <li class="order-form__filter-item order-form__filter-item--color">
@@ -112,36 +110,33 @@
                         </li>
                     </ul>
                 </fieldset>
+
+                <fieldset class="order-form__fieldset order-form__fieldset--client-contacts">
+                    <div class="order-form__fieldset-name">
+                        <span class="order-form__fieldset-title">ФИО</span>
+                    </div>
+                    <label for="family-name" class="order-form__family-name">Фамилия:</label>
+                    <input id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
+                    <label for="first-name" class="order-form__first-name">Имя:</label>
+                    <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя">
+                    <label for="last-name" class="order-form__last-name">Отчество:</label>
+                    <input id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете">
+                    <div class="order-form__fieldset-name">
+                        <span class="order-form__fieldset-title">ТЕЛ</span>
+                    </div>
+                    <input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
+                    <div class="order-form__fieldset-name">
+                        <span class="order-form__fieldset-title">E-MAIL</span>
+                    </div>
+                    <input id="mail" type="text" name="mail" placeholder="Ваш e-mail">
+                    <div class="order-form__fieldset-name">
+                        <span class="order-form__fieldset-title">ДОП</span>
+                    </div>
+                    <textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <button type="submit" class="btn order-form__btn">Отправить заказ</button>
+                </fieldset>
             </div>
-            <form class="order-form__client-contacts" action="#" method="post">
-                <div class="order-form__fieldset-name">
-                    <span class="order-form__fieldset-title">ФИО</span>
-                    <span class="order-form__fieldset-edge"></span>
-                </div>
-                <label for="family-name" class="order-form__family-name">Фамилия:</label>
-                <input id="family-name" type="text" name="family-name" placeholder="Укажите фамилию">
-                <label for="first-name" class="order-form__first-name">Имя:</label>
-                <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя">
-                <label for="last-name" class="order-form__last-name">Отчество:</label>
-                <input id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете">
-                <div class="order-form__fieldset-name">
-                    <span class="order-form__fieldset-title">ТЕЛ</span>
-                    <span class="order-form__fieldset-edge"></span>
-                </div>
-                <input id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
-                <div class="order-form__fieldset-name">
-                    <span class="order-form__fieldset-title">E-MAIL</span>
-                    <span class="order-form__fieldset-edge"></span>
-                </div>
-                <input id="mail" type="text" name="mail" placeholder="Ваш e-mail">
-                <div class="order-form__fieldset-name">
-                    <span class="order-form__fieldset-title">ДОП</span>
-                    <span class="order-form__fieldset-edge"></span>
-                </div>
-                <textarea id="text" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-                <button type="submit" class="btn order-form__btn">Отправить заказ</button>
-            </form>
-        </section>
+        </form>
     </main>
     <footer class="footer">
         <ul class="footer__social-list">
@@ -149,10 +144,10 @@
             <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
             <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
         </ul>
-            <div class="footer__site-developer">
-                <span class="footer__studio">Разработано</span>
-                <a href="https://htmlacademy.ru/"><img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height=""></a>
-            </div>
+        <div class="footer__site-developer">
+            <span class="footer__studio">Разработано</span>
+            <a href="https://htmlacademy.ru/"><img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height=""></a>
+        </div>
     </footer>
 </body>
 
