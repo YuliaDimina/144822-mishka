@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка. Главная страница</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <base href="https://htmlacademy-adaptive.github.io/144822-mishka/6/">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/header__logo.png" alt="Логотип сайта Мишка" width="" height="">
+        </div>
+        <nav class="header__menu">
+            <ul>
+                <li class="header__menu-item"><a href="#">Каталог товаров</a></li>
+                <li class="header__menu-item"><a href="#">Вязание на заказ</a></li>
+            </ul>
+        </nav>
+        <div class="header__user-menu">
+            <div class="header__user-search">
+                <a href="#">Поиск по сайту</a>
+                <div class="header__search-modal">
+                    <form action="https://htmlacademy.ru" method="get">
+                        <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
+                        <label for="text-search" class="header__search-label">Слово для поиска</label>
+                    </form>
+                </div>
+            </div>
+            <div class="header__backet">
+                <a href="#" class="header__backet header__backet--status">Корзина: пока пуста</a>
+                <!--
+                    <div class="backet-modal">
+                        <table>
+                            <caption>Итого: 750 руб.</caption>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/1min.png" alt="Пломбир апельсиновый" height="33" width="33"></td>
+                                <td class="prodact-name">Пломбир с апельсиновым джемом</td>
+                                <td class="prodact-size">1,5 кг х 200 руб.</td>
+                                <td class="prodact-price">300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/2min.png" alt="Пломбир клубничный" height="33" width="33"></td>
+                                <td class="prodact-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="prodact-size">1,5 кг х 300 руб.</td>
+                                <td class="prodact-price">450 руб.</td>
+                            </tr>
+                        </table>
+                        <a href="#" class="btn bucket-btn">Оформить заказ</a>
+                    </div>
+-->
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__title">Каталог товаров</h1>
+        <section class="catalog-items">
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/catalog-item-1" alt="Иллюстрация к товару" width="" height="">
+                    <h1 class="catalog-items__title">Зайчик-попрыгайчик</h1>
+                </a>
+                <span class="catalog-items__parameter">Рост 30см, вес 200гр</span>
+                <div class="catalog-items__buy">
+                    <span class="catalog-items__price">1200 руб.</span>
+                    <a href="#" class="catalog-items__open"><span class="catalog-items__add-to-backet"></span></a>
+                </div>
+            </article>
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/catalog-item-1" alt="Иллюстрация к товару" width="" height="">
+                    <h1 class="catalog-items__title">Корзинка для белья</h1>
+                    <span class="catalog-items__parameter">Диаметр 15 см, высота 10см</span>
+                    <span class="catalog-items__price">690 руб.</span>
+                    <span class="catalog-items__add-to-backet"></span>
+                </a>
+            </article>
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/catalog-item-1" alt="Иллюстрация к товару" width="" height="">
+                    <h1 class="catalog-items__title">Большая корзинка для игрушек</h1>
+                    <span class="catalog-items__parameter">Диаметр 30см, высота 30см</span>
+                    <span class="catalog-items__price">1500 руб.</span>
+                    <span class="catalog-items__add-to-backet"></span>
+                </a>
+            </article>
+        </section>
+        <section class="prodaction-process">
+           <h2 class="prodaction-process__title">Процесс производства</h2>
+            <div class="prodaction-process__video-container"><img class="prodaction-process__video" alt="Процесс производства" width="" height=""></div>
+            <p class="prodaction-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="order-page.html" class="btn">Сделать заказ</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--insta"><a href="">Inst</a></li>
+            <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
+            <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
+        </ul>
+            <div class="footer__site-developer">
+                <span class="footer__studio">Разработано</span>
+                <a href="https://htmlacademy.ru/"><img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height=""></a>
+            </div>
+    </footer>
+</body>
+
+</html>

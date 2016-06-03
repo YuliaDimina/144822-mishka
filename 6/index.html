@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка. Главная страница</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <base href="https://htmlacademy-adaptive.github.io/144822-mishka/6/">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/header__logo.png" alt="Логотип сайта Мишка" width="" height="">
+        </div>
+        <nav class="header__menu">
+            <ul>
+                <li class="header__menu-item"><a href="#">Каталог товаров</a></li>
+                <li class="header__menu-item"><a href="#">Вязание на заказ</a></li>
+            </ul>
+        </nav>
+        <div class="header__user-menu">
+            <div class="header__user-search">
+                <a href="#">Поиск по сайту</a>
+                <div class="header__search-modal">
+                    <form action="https://htmlacademy.ru" method="get">
+                        <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
+                        <label for="text-search" class="header__search-label">Слово для поиска</label>
+                    </form>
+                </div>
+            </div>
+            <div class="header__backet">
+                <a href="#" class="header__backet header__backet--status">Корзина: пока пуста</a>
+                <!--
+                    <div class="backet-modal">
+                        <table>
+                            <caption>Итого: 750 руб.</caption>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/1min.png" alt="Пломбир апельсиновый" height="33" width="33"></td>
+                                <td class="prodact-name">Пломбир с апельсиновым джемом</td>
+                                <td class="prodact-size">1,5 кг х 200 руб.</td>
+                                <td class="prodact-price">300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="prodact-choice">
+                                    <input type="button" name="button" value="выбор">
+                                </td>
+                                <td class="prodact-pic"><img class="illustration" src="img/2min.png" alt="Пломбир клубничный" height="33" width="33"></td>
+                                <td class="prodact-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="prodact-size">1,5 кг х 300 руб.</td>
+                                <td class="prodact-price">450 руб.</td>
+                            </tr>
+                        </table>
+                        <a href="#" class="btn bucket-btn">Оформить заказ</a>
+                    </div>
+-->
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__title">Милые штучки ручной работы для дома</h1>
+        <section class="products">
+            <div class="products__list products__list--interior">
+                <a href="#">Предметы интерьера</a>
+            </div>
+            <div class="products__list products__list--toys">
+                <a href="#">Детские игрушки</a>
+            </div>
+            <article class="products__item">
+                <h1 class="products__title">Вязаные корзинки</h1>
+                <span class="products__item-of-week">Товар недели</span>
+                <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <ul class="products__features">
+                    <li class="products__feature products__feature--color"></li>
+                    <li class="products__feature products__feature--diameter"></li>
+                    <li class="products__feature products__feature--height"></li>
+                </ul>
+                <img src="img/products__illustration-1" class="products__illustration" alt="Иллюстрация к корзинке" width="" height="">
+                <span class="products__price">Цена: 990 руб.</span>
+                <a class="btn products__btn">Заказать</a>
+            </article>
+        </section>
+        <section class="advantages-items">
+            <h2>Коротко о нас</h2>
+            <ul class="advantages-items__list">
+                <li class="advantages-items__item advantages-items__item--eco">Экологически чистые материалы</li>
+                <li class="advantages-items__item advantages-items__item--price">Скандинавский стиль по российской цене</li>
+                <li class="advantages-items__item advantages-items__item--likes">Увеличивает лайки на фотографиях</li>
+                <li class="advantages-items__item advantages-items__item--handmade">Связано вручную с любовью и умилением</li>
+                <li class="advantages-items__item advantages-items__item--native">Поддержка отечественного производителя</li>
+                <li class="advantages-items__item advantages-items__item--giftwrap">Поставляется в подарочной упаковке</li>
+            </ul>
+        </section>
+        <article class="reviews">
+            <h2>Отзывы</h2>
+            <blockquote class="reviews__slide">
+                <p class="reviews__user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+                <div class="reviews__author">
+                    <span class="rewiews__author-name">Анастасия Красильникова</span>
+                    <span class="reviews__author-contacts">@misssssiskras</span>
+                </div>
+            </blockquote>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--prev">Назад</a>
+            <a href="#" class="reviews__blockquote-btn reviews__blockquote-btn--next">Вперед</a>
+            <a href="send-review-page.html" class="btn reviews__btn">Написать</a>
+        </article>
+    </main>
+    <div class="contacts">
+        <span class="contacts__info">e-mail:</span>
+        <a href="mailto:info@mimimishkashop.ru" class="contacts__info">info@mimimishkashop.ru</a>
+        <span class="contacts__info">адрес:</span>
+        <div class="contacts__adress">
+            <span class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </div>
+    </div>
+    <div id="map"></div>
+    <a href="letter-page.html" class="btn footer__btn">Напишите нам</a>
+    <footer class="footer">
+        <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--insta"><a href="">Inst</a></li>
+            <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
+            <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
+        </ul>
+            <div class="footer__site-developer">
+                <span class="footer__studio">Разработано</span>
+                <a href="https://htmlacademy.ru/"><img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height=""></a>
+            </div>
+    </footer>
+</body>
+
+</html>
