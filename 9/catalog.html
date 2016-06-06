@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка. Главная страница</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <base href="https://htmlacademy-adaptive.github.io/144822-mishka/9/">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/header__logo.png" alt="Логотип сайта Мишка" width="" height="">
+        </div>
+        <nav class="header__menu">
+            <ul>
+                <li class="header__menu-item"><a href="#">Каталог товаров</a></li>
+                <li class="header__menu-item"><a href="#">Вязание на заказ</a></li>
+            </ul>
+        </nav>
+        <div class="header__user-menu">
+            <div class="header__user-search">
+                <a href="#">Поиск по сайту</a>
+                <div class="header__search-modal">
+                    <form action="https://htmlacademy.ru" method="get">
+                        <input type="search" name="text-search" id="text-search" placeholder="Что ищем?">
+                        <label for="text-search" class="header__search-label">Слово для поиска</label>
+                    </form>
+                </div>
+            </div>
+            <div class="header__backet">
+                <a href="#" class="header__backet header__backet--status">Корзина: пока пуста</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__catalog-title">
+            <h1>Каталог товаров</h1></div>
+        <section class="catalog-items">
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/photo-1-mobile@1x.jpg" alt="Иллюстрация к товару" width="" height="">
+                </a>
+                <div class="catalog-items__item-text">
+                    <a href="#" class="catalog-items__open"><h1 class="catalog-items__title">Зайчик-попрыгайчик</h1></a>
+                    <span class="catalog-items__parameter">Рост 30см, вес 200гр</span>
+                    <div class="catalog-items__buy">
+                        <span class="catalog-items__price">1200 руб.</span>
+                        <a href="#" class="catalog-items__open"><span class="catalog-items__add-to-backet"></span></a>
+                    </div>
+                </div>
+            </article>
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/photo-2-mobile@1x.jpg" alt="Иллюстрация к товару" width="" height="">
+                </a>
+                <div class="catalog-items__item-text">
+                    <a href="#" class="catalog-items__open"><h1 class="catalog-items__title">Корзинка для белья</h1></a>
+                    <span class="catalog-items__parameter">Диаметр 15 см, высота 10 см</span>
+                    <div class="catalog-items__buy">
+                        <span class="catalog-items__price">690 руб.</span>
+                        <a href="#" class="catalog-items__open"><span class="catalog-items__add-to-backet"></span></a>
+                    </div>
+                </div>
+            </article>
+            <article class="catalog-items__item">
+                <a href="#" class="catalog-items__open">
+                    <img class="catalog-items__illustration" src="img/photo-3-mobile@1x.jpg" alt="Иллюстрация к товару" width="" height="">
+                </a>
+                <div class="catalog-items__item-text">
+                    <a href="#" class="catalog-items__open"><h1 class="catalog-items__title">Большая корзинка для игрушек</h1></a>
+                    <span class="catalog-items__parameter">Диаметр 30см, рост 30см</span>
+                    <div class="catalog-items__buy">
+                        <span class="catalog-items__price">1500 руб.</span>
+                        <a href="#" class="catalog-items__open"><span class="catalog-items__add-to-backet"></span></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="prodaction-process">
+            <div class="prodaction-process__video-container"><img src="img/video-mobile@1x.jpg" class="prodaction-process__video" alt="Процесс производства" width="" height=""></div>
+            <div class="prodaction-process__text">
+                <h2 class="prodaction-process__title">Процесс производства</h2>
+                <p class="prodaction-process__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <a href="order-page.html" class="btn">Сделать заказ</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--insta"><a href="">Inst</a></li>
+            <li class="footer__social-item footer__social-item--fb"><a href="">FB</a></li>
+            <li class="footer__social-item footer__social-item--twi"><a href="">Twi</a></li>
+        </ul>
+        <div class="footer__site-developer">
+            <span class="footer__studio">Разработано</span>
+            <a href="https://htmlacademy.ru/"><img class="footer__logo" src="img/htmlacademy.svg" alt="Логотип HTML-academy" width="" height=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>
