@@ -1,0 +1,125 @@
+.main {
+    .container();
+}
+
+.products {
+    .flex();
+}
+
+.products__title {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    background-color: #fafafa;
+}
+
+.products__title h1 {
+    width: 260px;
+    margin: 0px auto;
+    .products__title-font();
+    text-align: center;
+}
+
+.products__list {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    .products__list-font();
+}
+
+.products__list--interior {
+    background-color: @main-color;
+}
+
+.products__list--toys {
+    background-color: @alt-color;
+}
+
+.products__title {
+    .products__title-font();
+}
+
+.products__item {
+    position: relative;
+    .flex();
+    align-items: flex-start;
+    margin-top: 40px;
+    .main-font();
+}
+
+.products__item::before {
+    position: absolute;
+    content: "Товар недели";
+    width: 170px;
+    height: auto;
+    top: 55px;
+    left: -7%;
+    color: @main-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.products__item-title {
+    width: 100%;
+    .products__title-font();
+}
+
+.products__features {
+    .list();
+    margin-bottom: 28px;
+    padding: 0;
+}
+
+.products__feature span {
+    display: inline-block;
+    width: 97px;
+}
+
+.products__feature {
+    padding: 15px 0px;
+    border-bottom: 1px solid #ececec;
+}
+
+.products__item-buy {
+    text-align: center;
+}
+
+.products__price {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    .products__price-font();
+}
+
+.products__btn {
+    .btn();
+    padding-left: 86px;
+    padding-right: 86px;
+}
+
+.products__item-picture {
+    width: 100%;
+    height: auto;
+}
+
+.products__item-picture img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.header {
+    .flex();
+    .container();
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.header__logo, .header__menu, .header__user-menu {
+    display: block;
+    width: 100%;
+}
+.header__logo img{
+    background-color: black;
+}
+
+.header__menu ul, .header__user-menu ul {
+    .list();
+    .flex();
+    justify-content: space-between;
+}
+
+.header__menu ul {
+    width: 100%;
+}
+
+.header__menu-item {
+    display: inline-block;
+}
+
+.header__menu-item a {
+    .menu-font();
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.header__menu-item--hidden a {
+    .menu-font-mobile();
+}
+
+
